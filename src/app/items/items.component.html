@@ -1,0 +1,9 @@
+<div>
+    
+    <app-total [total]="t"></app-total>
+
+    <app-item *ngFor="let i of items; let n=index" 
+    [indice]="n" [cosa]="i" (articulo)="quitarArticulo($event)" (check)="recal($event)">
+    </app-item>
+    
+</div>
